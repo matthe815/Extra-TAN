@@ -8,13 +8,13 @@ Cue, Extra TAN.
 
 What does it add?
 
-Cool Drink
+- Cool Drink
 
-Hot Drink
+- Hot Drink
 
-Super Cool Drink
+- Super Cool Drink
 
-Super Hot Drink
+- Super Hot Drink
 
 All of these drinks slightly push your body temperature in a different direction:
 
@@ -24,18 +24,18 @@ Hot Drink increases your core temperature slightly, Super Hot Drink increases yo
 
  
 
-Recipes will be displayed here at some point. For now, NEI/JEI will assist you where needed.
+***Recipes will be displayed here at some point. For now, NEI/JEI will assist you where needed.***
 
  
 
-THIS MOD REQUIRES TOUGH AS NAILS TO WORK
+**THIS MOD REQUIRES [Tough As Nails](https://minecraft.curseforge.com/projects/tough-as-nails) TO WORK**
 
  
 
 Can I use this in Modpacks?
 
-Yes.
+*Yes.*
 
 Do you have a GitHub? And if so, what's the repository link?
 
-Yes. It's at: https://github.com/matthe815/Extra-TAN
+*Yes. It's at: https://github.com/matthe815/Extra-TAN*
