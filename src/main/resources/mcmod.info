@@ -1,0 +1,16 @@
+[
+{
+  "modid": "extratan",
+  "name": "Extra TAN",
+  "description": "Additional TAN for all!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Matthe815"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["Tough As Nails"]
+}
+]

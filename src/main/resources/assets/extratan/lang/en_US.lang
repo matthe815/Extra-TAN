@@ -1,0 +1,12 @@
+# Items
+item.hotDrink.name=Hot Drink
+item.emptyFlask.name=Empty Flask
+item.coolDrink.name=Cool Drink
+item.waterDrink.name=Filled Flask
+item.superCoolDrink.name=Super Cool Drink
+item.superHotDrink.name=Super Hot Drink
+item.emptyPotionFlask.name=Empty Potion Flask
+
+# Creative Tabs
+itemGroup.extratan=Extra TAN Consumables
+itemGroup.potionTab=Extra TAN Potions
