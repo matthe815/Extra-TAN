@@ -9,8 +9,11 @@ Cue, Extra TAN.
 What does it add?
 
 Cool Drink
+
 Hot Drink
+
 Super Cool Drink
+
 Super Hot Drink
 
 All of these drinks slightly push your body temperature in a different direction:
