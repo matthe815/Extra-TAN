@@ -1,41 +1,33 @@
-Since I found Tough As Nails, my friend and I had one issue: Maintaining body temperature was a drag. 
+**This mod now requires Lieutenant, be sure to install it before running your pack.**
 
-Every few minutes, we had to stop mining, and run next to a heat source in order to not die of Hypothermia.
-
-Due to that issue, I decided to create a mod, which adds a few new items that makes maintaining temperature easier.
-
-Cue, Extra TAN.
-
-What does it add?
-
-- Cool Drink
-
-- Hot Drink
-
-- Super Cool Drink
-
-- Super Hot Drink
-
-All of these drinks slightly push your body temperature in a different direction:
-
-Cool Drink reduces your core temperature slightly, Super Cool Drink reduces your core temperature drastically.
-
-Hot Drink increases your core temperature slightly, Super Hot Drink increases your core temperature drastically.
+Ever since I came upon Tough as Nails, I've always had a single issue: I would always freeze or burn to death while exploring.
+Of course, the process of juggling between heat sources is never a fun one. So I decided to create Extra TAN to alleviate the issue!
 
  
 
-***Recipes will be displayed here at some point. For now, NEI/JEI will assist you where needed.***
+This mod adds several utility items that not only manage temperature, but also add additional ways to keep hydration high. Not only that, but Extra TAN now includes native Tough as Nails capability for Harvestcraft, allowing for Harvestcraft drinks to raise your thirst level.
 
  
 
-**THIS MOD REQUIRES [Tough As Nails](https://minecraft.curseforge.com/projects/tough-as-nails) TO WORK**
+Are you freezing/burning to death? Well it's your lucky day, you can now drink a trusty Hot/Cold Drink to change your temperature to a level less dangerous.
+These single-use drinks will inch your current temperature further towards your intended temperature.
+
+
+If you're looking for a little more, you can use a Super Hot/Super Cold drink! These trusty drinks will push your temperature greatly in a direction.
+
+Super Hot/Super Cold drinks have a tendency to break the bottles that contain them, so beware of your bottle's durability. 
+Although Tempered Flasks will not shatter from exposure to extreme temperatures.
 
  
 
-Can I use this in Modpacks?
+Can I disable the drinks and just keep the Harvestcraft features?
+Yes! From the config, you can disable everything save for the Harvestcraft features.
 
-*Yes.*
+ 
 
-Do you have a GitHub? And if so, what's the repository link?
+**May I use this in my modpack?**
+Absolutely!
+ 
 
-*Yes. It's at: https://github.com/matthe815/Extra-TAN*
+**What do I do if I discover a bug?!**
+Well, feel free to open an issue! I'll get to it as soon as I can. 
