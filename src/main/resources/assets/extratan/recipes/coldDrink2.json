@@ -1,0 +1,19 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "extratan:filled_flask"
+        },
+        
+        {
+            "item": "toughasnails:ice_cube"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:flask_with_cold_water",
+      "count": 1
+    }
+  }

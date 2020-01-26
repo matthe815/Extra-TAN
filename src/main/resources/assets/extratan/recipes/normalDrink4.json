@@ -1,0 +1,20 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "extratan:empty_flask"
+        },
+        
+        {
+            "item": "minecraft:potion",
+            "Potion": "minecraft:water"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:filled_flask",
+      "count": 1
+    }
+  }

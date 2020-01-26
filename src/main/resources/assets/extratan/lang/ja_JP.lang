@@ -1,30 +1,30 @@
-# Items
-item.extratan.emptyFlask.name=Flask
-item.extratan.emptyTemperedFlask.name=Tempered Flask
-item.extratan.hotDrink.name=Hot Drink
-item.extratan.coldDrink.name=Cold Drink
-item.extratan.waterFilledFlask.name=Filled Flask
-item.extratan.superColdDrink.name=Super Cold Drink
-item.extratan.superHotDrink.name=Super Hot Drink
+﻿# イテーム
+item.extratan.emptyFlask.name=水筒
+item.extratan.emptyTemperedFlask.name=強化ガラス水筒
+item.extratan.hotDrink.name=熱い飲み物
+item.extratan.coldDrink.name=寒い飲み物
+item.extratan.waterFilledFlask.name=フル水筒
+item.extratan.superColdDrink.name=とても暑い飲み物
+item.extratan.superHotDrink.name=とても寒い飲み物
 item.extratan.appleJuice.name=Apple Juice
 item.extratan.orangeJuice.name=Orange Juice
 item.extratan.lemonade.name=Lemonade
 
-# Blocks
-tile.extratan.temperedGlassBlock.name=Tempered Glass Block
+# ブロック
+tile.extratan.temperedGlassBlock.name=強化ガラスブロック
 
-# Creative Tabs
-itemGroup.extratan.extraTANDrinks=Extra TAN Consumables
-itemGroup.extratan.extraTANMaterials=Extra TAN Materials
-itemGroup.extratan.extraTANBlocks=Extra TAN Blocks
+# クリァテヴ・タブ
+itemGroup.extratan.extraTANDrinks=「Extra TAN」の飲み物
+itemGroup.extratan.extraTANMaterials=「Extra TAN」の用材
+itemGroup.extratan.extraTANBlocks=「Extra TAN」のブロック
 
-# Potion Effects
+# ポチオン・エフェクト
 potion.chilled=Chilled
 potion.steaming=Steaming
 potion.temperature_resistance=Temperature Resistance
 potion.temperature_immunity=Temperature Immunity
 
-# Potion Types
+# ポチオン・チープ
 potion.effect.temperature_resistance=Potion of Temperature Resistance
 potion.effect.temperature_immunity=Potion of Temperature Immunity
 splash_potion.effect.temperature_resistance=Splash Potion of Temperature Resistance
@@ -34,6 +34,6 @@ lingering_potion.effect.temperature_immunity=Lingering Potion of Temperature Imm
 tipped_arrow.effect.temperature_resistance=Tipped Arrow of Temperature Resistance
 tipped_arrow.effect.temperature_immunity=Tipped Arrow of Temperature Immunity
 
-# Enchantments
-enchantment.heat_resistance=Heat Protection
-enchantment.cold_resistance=Cold Protection
+# エンチャンター
+enchantment.heat_resistance=暑い保護
+enchantment.cold_resistance=寒い保護

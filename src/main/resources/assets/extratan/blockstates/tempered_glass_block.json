@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "extratan:tempered_glass_block" }
+        ]
+    }
+}

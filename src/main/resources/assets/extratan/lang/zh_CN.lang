@@ -1,0 +1,38 @@
+# イテーム
+item.extratan.emptyFlask.name=烧瓶
+item.extratan.emptyTemperedFlask.name=回火瓶
+item.extratan.hotDrink.name=热饮
+item.extratan.coldDrink.name=冷饮
+item.extratan.waterFilledFlask.name=装满了烧瓶
+item.extratan.superColdDrink.name=超级热饮
+item.extratan.superHotDrink.name=超级冷饮
+item.extratan.appleJuice.name=Apple Juice
+item.extratan.orangeJuice.name=Orange Juice
+item.extratan.lemonade.name=Lemonade
+
+# ブロック
+tile.extratan.temperedGlassBlock.name=钢化玻璃块
+
+# クリァテヴ・タブ
+itemGroup.extratan.extraTANDrinks=Extran TAN耗材
+itemGroup.extratan.extraTANMaterials=Extra TAN物料
+itemGroup.extratan.extraTANBlocks=Extra TAN块
+
+# ポチオン・エフェクト
+potion.chilled=冷
+potion.steaming=腾腾
+potion.temperature_resistance=耐温性
+potion.temperature_immunity=温度免疫力
+
+# ポチオン・チープ
+potion.effect.temperature_resistance=耐温药水
+potion.effect.temperature_immunity=温度免疫药剂
+splash_potion.effect.temperature_resistance=耐温飞溅药水
+splash_potion.effect.temperature_immunity=飞溅药剂的温度免疫
+lingering_potion.effect.temperature_resistance=徘徊耐温性
+lingering_potion.effect.temperature_immunity=徘徊温度免疫力
+tipped_arrow.effect.temperature_resistance=温度阻力箭头
+tipped_arrow.effect.temperature_immunity=温度免疫的箭头
+
+# エンチャンター
+enchantment.heat_resistance=Heat Protection

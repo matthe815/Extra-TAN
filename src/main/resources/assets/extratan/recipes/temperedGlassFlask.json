@@ -1,0 +1,27 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "extratan:empty_flask"
+        },
+        
+        {
+            "item": "extratan:tempered_glass_block"
+        },
+
+        {
+            "item": "extratan:tempered_glass_block"
+        },
+
+        {
+            "item": "extratan:tempered_glass_block"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:empty_tempered_flask",
+      "count": 1
+    }
+  }

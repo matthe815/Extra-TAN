@@ -1,16 +1,12 @@
-[
-{
+[{
   "modid": "extratan",
   "name": "Extra TAN",
-  "description": "Additional TAN for all!",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
+  "description": "An expansion to Tough as Nails to add additional ways to maintain body-temperature early game.",
+  "version": "5.0.119",
+  "mcversion": "1.12.2",
+  "logoFile": "assets/lieutenant/textures/lieutenant_logo.png",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/extra-tan",
+  "updateJSON": "",
   "authorList": ["Matthe815"],
-  "credits": "",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": ["Tough As Nails"]
-}
-]
+  "dependencies": ["lieutenant"]
+}]

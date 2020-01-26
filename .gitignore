@@ -1,0 +1,15 @@
+.gradle/
+.settings/
+bin/
+build/
+gradle/
+run/
+.classpath
+.project
+build.gradle
+build.properties
+Extra TAN_Client.launch
+Extra TAN_Server.launch
+gradle.properties
+gradlew
+gradlew.bat
