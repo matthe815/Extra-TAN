@@ -1,14 +1,12 @@
 package extratan.items.Items;
 
-import extratan.items.BasePotion;
+import lieutenant.potions.PotionBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import toughasnails.api.stat.capability.ITemperature;
-import toughasnails.api.temperature.Temperature;
 import toughasnails.api.temperature.TemperatureHelper;
 
-@SuppressWarnings("unused")
-public class PotionTemperatureResistance extends BasePotion {
+public class PotionTemperatureResistance extends PotionBase {
 	
 	public PotionTemperatureResistance(int id) {
 		super(false, 0x0002b, 1, 1);
