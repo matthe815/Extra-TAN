@@ -55,7 +55,7 @@ import toughasnails.api.thirst.ThirstHelper;
 public class ExtraTAN {
 
 	public static final String modId = "extratan";
-	public static final String name = "extratan";
+	public static final String name = "Extra TAN";
 	public static final String version = "5.2.158";
 	public static final String dependencies = "required-after:toughasnails;required-after:lieutenant@1.5;after:harvestcraft";
 
@@ -121,10 +121,7 @@ public class ExtraTAN {
 
 			@Override
 			public void serialize(JsonObject object, ApplyRandomTempProt functionClazz,
-					JsonSerializationContext serializationContext) {
-				
-				
-			}
+					JsonSerializationContext serializationContext) {}
 			
 		});
 	}
@@ -139,7 +136,6 @@ public class ExtraTAN {
 	
 	@SubscribeEvent
 	public void lootLoad(LootTableLoadEvent evt) {
-		System.out.println(evt.getName().toString());
 	    if (evt.getName().toString().equals("minecraft:chests/simple_dungeon") || evt.getName().toString().equals("minecraft:chests/spawn_bonus_chest") || evt.getName().toString().equals("minecraft:chests/abandoned_mineshaft")) {
 	    	LootEntry entry = new LootEntryTable(new ResourceLocation("extratan:inject/simple_dungeon"), 100, 1, new LootCondition[] {}, "minecraft:enchanted_book");
 	    	LootPool pool = new LootPool(new LootEntry[]{entry}, new LootCondition[] {}, new RandomValueRange(10), new RandomValueRange(5), "main_pool");
@@ -183,8 +179,6 @@ public class ExtraTAN {
 		if (hasBuff) {
 			ITemperature temp = TemperatureHelper.getTemperatureData(player);
 			int target = temp.getPlayerTarget(player);
-				
-			System.out.println(buff1Level);
 			
 			if (temp.getTemperature().getRawValue() < target && temp.getTemperature().getRawValue() >= 12) {
 				temp.setChangeTime(temp.getChangeTime()-1);
@@ -263,7 +257,7 @@ public class ExtraTAN {
 		String[] drinkThirst = ConfigHandler.thirstItems;
 		
 		for (String drink : drinkThirst) {
-			if (drink.startsWith(item.getItem().getRegistryName().toString()) == true) {
+			if (drink.toLowerCase().startsWith(item.getItem().getRegistryName().toString().toLowerCase()) == true) {
 				return Integer.parseInt(drink.substring(item.getItem().getRegistryName().toString().length()+1));
 			}
 		}
