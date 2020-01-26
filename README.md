@@ -1,4 +1,4 @@
-This mod now requires Lieutenant, be sure to install it before running your pack.
+**This mod now requires Lieutenant, be sure to install it before running your pack.**
 
  
 
@@ -27,10 +27,10 @@ Yes! From the config, you can disable everything save for the Harvestcraft featu
 
  
 
-May I use this in my modpack?
+**May I use this in my modpack?**
 Absolutely!
  
 
-What do I do if I discover a bug?!
+**What do I do if I discover a bug?!**
 Well, feel free to open an issue! I'll get to it as soon as I can. 
  
