@@ -105,29 +105,32 @@ public class EventEngine {
 			if (item.getItem().getRegistryName().toString().contains("harvestcraft")) {
 				ResourceLocation itemName = item.getItem().getRegistryName();
 				
-				if (itemName.toString().toLowerCase().contains("smoothie"))
+				if (itemName.toString().toLowerCase().contains("smoothie") || itemName.toString().toLowerCase().contains("juice"))
 					NudgeTemperature(player, -2);
-				
-				if (itemName.toString().toLowerCase().contains("tea") || itemName.toString().toLowerCase().contains("cocoa") || itemName.toString().toLowerCase().contains("coffee"))
+				else if (itemName.toString().toLowerCase().contains("tea") || itemName.toString().toLowerCase().contains("cocoa") || itemName.toString().toLowerCase().contains("coffee"))
 					NudgeTemperature(player, 2);
+				else
+					return;
 				
 				IThirst th = ThirstHelper.getThirstData(player);
 				
-				if ((th.getThirst() + 3) > 20)
-					th.setThirst(20);
-				else
-					th.setThirst(th.getThirst() + 3);
+				if (SearchConfigArrayForItemThirst(item) == -1) {
+					if ((th.getThirst() + 3) > 20)
+						th.setThirst(20);
+					else
+						th.setThirst(th.getThirst() + 3);
 				
-				if ((th.getHydration() + 2) > 20)
-					th.setHydration(20);
-				else
-					th.setHydration(th.getHydration() + 2);
+					if ((th.getHydration() + 2) > 20)
+						th.setHydration(20);
+					else
+						th.setHydration(th.getHydration() + 2);
+				}
 			}
 			
 			///
 			/// Config supported items.
 			///
-			if (SearchConfigArrayForItemThirst(item) != 0) {
+			if (SearchConfigArrayForItemThirst(item) != -1) {
 				int effect = SearchConfigArrayForItemThirst(item);
 				IThirst th = ThirstHelper.getThirstData(player);
 				
@@ -155,7 +158,7 @@ public class EventEngine {
 			}
 		}
 		
-		return 0;
+		return -1;
 	}
 	
 	

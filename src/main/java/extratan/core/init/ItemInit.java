@@ -24,7 +24,7 @@ import net.minecraft.item.Item;
 public class ItemInit {
 
 	public static void Init() {
-		AddItems(new Item[] {
+		RegisterHandler.AddItems(new Item[] {
 			new EmptyFlask(),
 			new EmptyTemperedFlask(),
 			new ColdDrink(),
@@ -43,7 +43,7 @@ public class ItemInit {
 			new OrangeJuice()
 		});
 			
-		AddBlocks(new Block[] {
+		RegisterHandler.AddBlocks(new Block[] {
 			new TemperedGlassBlock()	
 		});
 	}
