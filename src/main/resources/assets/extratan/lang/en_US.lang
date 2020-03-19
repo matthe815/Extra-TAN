@@ -37,3 +37,5 @@ tipped_arrow.effect.temperature_immunity=Tipped Arrow of Temperature Immunity
 # Enchantments
 enchantment.heat_resistance=Heat Protection
 enchantment.cold_resistance=Cold Protection
+enchantment.extratan.heat_resistance.desc=Protects you against most (or all) aspects of the heat. (Level I: Reduces rate at which you can be heated, Level II: Negates Heat)
+enchantment.extratan.cold_resistance.desc=Protects you against most (or all) aspects of the cold. (Level I: Reduces rate at which you can be cooled, Level II: Negates Cold)
