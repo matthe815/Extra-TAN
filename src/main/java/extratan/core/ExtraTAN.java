@@ -6,12 +6,12 @@ import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 
-import extratan.core.init.ItemInit;
 import extratan.core.init.PotionInit;
 import extratan.enchantments.ColdResistanceEnchantment;
 import extratan.enchantments.HeatResistanceEnchantment;
 import extratan.gui.handlers.HUDHandler;
 import extratan.gui.handlers.SyncHandler;
+import extratan.items.Items.ItemList;
 import extratan.lootfunctions.ApplyRandomTempProt;
 import lieutenant.core.Lieutenant;
 import net.minecraft.entity.player.EntityPlayer;
@@ -37,7 +37,7 @@ public class ExtraTAN {
 
 	public static final String modId = "extratan";
 	public static final String name = "Extra TAN";
-	public static final String version = "5.2.587";
+	public static final String version = "6";
 	public static final String dependencies = "required-after:toughasnails;required-after:lieutenant@1.5;after:harvestcraft";
 
 	@Mod.Instance(modId)
@@ -47,6 +47,8 @@ public class ExtraTAN {
 	public static Lieutenant lieutenant;
 	
 	public static float lastExhaustion;
+	
+	public static ItemList list;
 	
 	public static Map<EntityPlayer, Float> lastExhaustions = new HashMap<EntityPlayer, Float>();
 	
@@ -58,10 +60,10 @@ public class ExtraTAN {
 	{
 		System.out.println(modId + " is pre-loading!");
 		
-		if (ConfigHandler.disableTANFeatures)
-			return;
+		// If the user has disabled TAN features, then ignore the rest of setup.
+		if (ConfigHandler.common.disableTANFeatures) return;
 		
-		ItemInit.Init();
+		list = new ItemList();
 		PotionInit.Init();
 		
 		ForgeRegistries.ENCHANTMENTS.register(heat_resistance);
@@ -73,33 +75,33 @@ public class ExtraTAN {
 	{
 		System.out.println(modId + " is loading!");
 		
-		if (ConfigHandler.disableTANFeatures)
-			return;
+		// Also skip initalization if the user has disabled core functionality.
+		if (ConfigHandler.common.disableTANFeatures) return;
 		
 		GameRegistry.addSmelting(Item.getByNameOrId("extratan:filled_flask"), new ItemStack(Item.getByNameOrId("extratan:flask_with_hot_water")), 0);
 		GameRegistry.addSmelting(Item.getByNameOrId("extratan:flask_with_cold_water"), new ItemStack(Item.getByNameOrId("extratan:filled_flask")), 0);
 		
-		if (ConfigHandler.UseFlintandSteelRecipes) {
+		// Add the new Flint and Steel recipes if its' enabled.
+		if (ConfigHandler.common.UseFlintandSteelRecipes) {
 			GameRegistry.addShapelessRecipe(new ResourceLocation(ExtraTAN.modId+"flintsteelheat"), null, new ItemStack(Item.getByNameOrId("extratan:flask_with_hot_water")), new Ingredient[] {Ingredient.fromItem(Item.getByNameOrId("extratan:filled_flask")), Ingredient.fromItem(Items.FLINT_AND_STEEL)});
 			GameRegistry.addShapelessRecipe(new ResourceLocation(ExtraTAN.modId+"flintsteelheat2"), null, new ItemStack(Item.getByNameOrId("extratan:filled_flask")), new Ingredient[] {Ingredient.fromItem(Item.getByNameOrId("extratan:flask_with_cold_water")), Ingredient.fromItem(Items.FLINT_AND_STEEL)});
 		}
 		
-		SyncHandler.init();
+		SyncHandler.init(); // Initialize the packet synchronizer.
 		
-		if (event.getSide() == Side.CLIENT)
-			HUDHandler.init();
+		// Initalize the HUD (only if on the client side, this is ignored on the server)
+		if (event.getSide() == Side.CLIENT) HUDHandler.init();
 		
+		// Register the loot functionality.
 		LootFunctionManager.registerFunction(new Serializer<ApplyRandomTempProt>(new ResourceLocation("extratan:apply_random_temp_prot"), ApplyRandomTempProt.class) {
 
 			@Override
-			public ApplyRandomTempProt deserialize(JsonObject object, JsonDeserializationContext deserializationContext,
-					LootCondition[] conditionsIn) {
+			public ApplyRandomTempProt deserialize(JsonObject object, JsonDeserializationContext content, LootCondition[] conditionsIn) {
 				return new ApplyRandomTempProt();
 			}
 
 			@Override
-			public void serialize(JsonObject object, ApplyRandomTempProt functionClazz,
-					JsonSerializationContext serializationContext) {}
+			public void serialize(JsonObject object, ApplyRandomTempProt functionClazz, JsonSerializationContext content) {}
 			
 		});
 	}
