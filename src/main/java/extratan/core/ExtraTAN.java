@@ -37,7 +37,7 @@ public class ExtraTAN {
 
 	public static final String modId = "extratan";
 	public static final String name = "Extra TAN";
-	public static final String version = "5.2.158";
+	public static final String version = "5.2.587";
 	public static final String dependencies = "required-after:toughasnails;required-after:lieutenant@1.5;after:harvestcraft";
 
 	@Mod.Instance(modId)

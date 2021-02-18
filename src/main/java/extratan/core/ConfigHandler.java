@@ -24,8 +24,8 @@ public class ConfigHandler {
 	@RequiresWorldRestart
 	@Comment(value = { 
 		"Add additional items to affect thirst not included with the mod by default.",
-		"To add an item, pop a new value into the array with the format of ITEMID: THIRST",
+		"To add an item, pop a new value into the array with the format of ITEMID:THIRST",
 		"Negative numbers are accepted."
 	})
-	public static String[] thirstItems = new String[] {"MINECRAFT:APPLE: 2"};
+	public static String[] thirstItems = new String[] {"MINECRAFT:APPLE:2"};
 }
