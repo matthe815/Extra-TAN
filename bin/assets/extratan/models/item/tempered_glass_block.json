@@ -1,0 +1,7 @@
+{
+    "parent": "extratan:block/tempered_glass_block",
+    "textures": {
+        "layer0": "extratan:items/tempered_glass_block"
+    }
+ 
+}

@@ -1,0 +1,47 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+
+        {
+            "item": "minecraft:glass"
+        },
+        
+        {
+            "item": "minecraft:obsidian"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:tempered_glass_block",
+      "count": 8
+    }
+  }

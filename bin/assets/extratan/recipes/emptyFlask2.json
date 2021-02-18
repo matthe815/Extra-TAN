@@ -1,0 +1,19 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:glass_bottle"
+        },
+
+        {
+            "item": "minecraft:glass"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:empty_flask",
+      "count": 1
+    }
+  }
