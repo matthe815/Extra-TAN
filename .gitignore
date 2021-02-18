@@ -1,16 +1,16 @@
-.gradle/
-.gradle/wrapper
-.settings/
-bin/
-build/
-gradle/
-run/
+.gradle
 .classpath
-.project
-build.gradle
-build.properties
-Extra TAN_Client.launch
-Extra TAN_Server.launch
-gradle.properties
-gradlew
-gradlew.bat
+/build/
+/run/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
