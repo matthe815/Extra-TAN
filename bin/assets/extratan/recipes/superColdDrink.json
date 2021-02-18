@@ -1,0 +1,19 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "extratan:flask_with_cold_water"
+        },
+        
+        {
+            "item": "minecraft:ice"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:flask_with_super_cold_water",
+      "count": 1
+    }
+  }

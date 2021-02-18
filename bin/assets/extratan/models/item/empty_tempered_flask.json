@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "extratan:items/empty_tempered_flask"
+    }
+ 
+}

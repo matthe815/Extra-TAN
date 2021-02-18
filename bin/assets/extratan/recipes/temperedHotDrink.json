@@ -1,0 +1,19 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "extratan:water_filled_tempered_flask"
+        },
+        
+        {
+            "item": "minecraft:flint_and_steel"
+        }
+    ],
+
+    "result": 
+    {
+      "item": "extratan:tempered_flask_with_hot_water",
+      "count": 1
+    }
+  }
