@@ -16,7 +16,7 @@ import toughasnails.api.thirst.ThirstHelper;
 
 public class BaseDrinkableItem extends ItemBucketMilk implements IConsumableThirst {
 	
-	public BaseDrinkableItem(String name, String registryName, int temperature, BaseCreativeTab creativeTab) {
+	public BaseDrinkableItem(String name, String registryName, BaseCreativeTab creativeTab) {
 		setUnlocalizedName(ExtraTAN.modId + "." + name)
 			.setRegistryName(registryName);
 		
