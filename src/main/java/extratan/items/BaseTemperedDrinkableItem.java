@@ -9,7 +9,7 @@ public class BaseTemperedDrinkableItem extends BaseDrinkableItem implements ICon
 {
 	public BaseTemperedDrinkableItem(String name, String registryName, int temperature, BaseCreativeTab creativeTab)
 	{
-		super(registryName, registryName, temperature, creativeTab);
+		super(registryName, registryName, creativeTab);
 
 		setUnlocalizedName(ExtraTAN.modId + "." + name) // Set the unlocalized name.
 			.setRegistryName(registryName) // Set the localized name.

@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import extratan.core.ExtraTAN;
+import lieutenant.registry.RegisterHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 
@@ -15,6 +16,8 @@ public class BaseEatableItem extends ItemFood implements IConsumableThirst {
 			setUnlocalizedName(ExtraTAN.modId + "." + name);
 			setRegistryName(registryName);
 			setCreativeTab(creativeTab);
+			
+			RegisterHandler.AddItem(this);
 		}
 		
 		@Override

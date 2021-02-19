@@ -3,6 +3,7 @@ package extratan.items;
 import extratan.core.EventEngine;
 import extratan.core.ExtraTAN;
 import extratan.items.Items.ItemList;
+import lieutenant.registry.RegisterHandler;
 import lieutenant.tabs.BaseCreativeTab;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityLivingBase;
@@ -22,6 +23,8 @@ public class BaseDrinkableItem extends ItemBucketMilk implements IConsumableThir
 		
 		setCreativeTab(creativeTab);
 		setMaxDamage(5);
+		
+		RegisterHandler.AddItem(this);
 	}
 	
 	@Override

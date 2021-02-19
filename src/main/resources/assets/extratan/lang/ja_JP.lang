@@ -1,32 +1,28 @@
-﻿# イテーム
+﻿# アイテム
 item.extratan.emptyFlask.name=水筒
-item.extratan.emptyTemperedFlask.name=強化ガラス水筒
-item.extratan.hotDrink.name=熱い飲み物
-item.extratan.coldDrink.name=寒い飲み物
-item.extratan.waterFilledFlask.name=フル水筒
-item.extratan.superColdDrink.name=とても暑い飲み物
-item.extratan.superHotDrink.name=とても寒い飲み物
-item.extratan.appleJuice.name=Apple Juice
-item.extratan.orangeJuice.name=Orange Juice
-item.extratan.lemonade.name=Lemonade
+item.extratan.emptyTemperedFlask.name=強化水筒
+item.extratan.hotDrink.name=熱水
+item.extratan.coldDrink.name=寒水
+item.extratan.waterFilledFlask.name=水
+item.extratan.superColdDrink.name=超熱水
+item.extratan.superHotDrink.name=超寒水
 
 # ブロック
-tile.extratan.temperedGlassBlock.name=強化ガラスブロック
+tile.extratan.temperedGlassBlock.name=強化グラス
 
 # クリァテヴ・タブ
 itemGroup.extratan.extraTANDrinks=「Extra TAN」の飲み物
-itemGroup.extratan.extraTANMaterials=「Extra TAN」の用材
 itemGroup.extratan.extraTANBlocks=「Extra TAN」のブロック
 
-# ポチオン・エフェクト
-potion.chilled=Chilled
-potion.steaming=Steaming
-potion.temperature_resistance=Temperature Resistance
-potion.temperature_immunity=Temperature Immunity
+# 水薬・エフェクト
+potion.chilled=寒心
+potion.steaming=熱心
+potion.temperature_resistance=温度の抵抗力
+potion.temperature_immunity=温度の免疫
 
-# ポチオン・チープ
-potion.effect.temperature_resistance=Potion of Temperature Resistance
-potion.effect.temperature_immunity=Potion of Temperature Immunity
+# 水薬・チープ
+potion.effect.temperature_resistance=水薬の「温度の抵抗力」
+potion.effect.temperature_immunity=水薬の「温度の免疫」
 splash_potion.effect.temperature_resistance=Splash Potion of Temperature Resistance
 splash_potion.effect.temperature_immunity=Splash Potion of Temperature Immunity
 lingering_potion.effect.temperature_resistance=Lingering Potion of Temperature Resistance
@@ -35,5 +31,5 @@ tipped_arrow.effect.temperature_resistance=Tipped Arrow of Temperature Resistanc
 tipped_arrow.effect.temperature_immunity=Tipped Arrow of Temperature Immunity
 
 # エンチャンター
-enchantment.heat_resistance=暑い保護
-enchantment.cold_resistance=寒い保護
+enchantment.heat_resistance=暑抵抗力
+enchantment.cold_resistance=寒抵抗力

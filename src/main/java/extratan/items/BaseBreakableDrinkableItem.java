@@ -32,7 +32,7 @@ public class BaseBreakableDrinkableItem extends BaseDrinkableItem {
 	
 	public BaseBreakableDrinkableItem(String name, String registryName, int temperature, BaseCreativeTab creativeTab)
 	{
-		super(registryName, registryName, temperature, creativeTab);
+		super(registryName, registryName, creativeTab);
 		
 		setUnlocalizedName(ExtraTAN.modId + "." + name)
 			.setRegistryName(registryName)
