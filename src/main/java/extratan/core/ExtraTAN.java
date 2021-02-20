@@ -16,7 +16,6 @@ import extratan.lootfunctions.ApplyRandomTempProt;
 import lieutenant.core.Lieutenant;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
@@ -78,13 +77,13 @@ public class ExtraTAN {
 		// Also skip initalization if the user has disabled core functionality.
 		if (ConfigHandler.common.disableTANFeatures) return;
 		
-		GameRegistry.addSmelting(Item.getByNameOrId("extratan:filled_flask"), new ItemStack(Item.getByNameOrId("extratan:flask_with_hot_water")), 0);
-		GameRegistry.addSmelting(Item.getByNameOrId("extratan:flask_with_cold_water"), new ItemStack(Item.getByNameOrId("extratan:filled_flask")), 0);
+		GameRegistry.addSmelting(ItemList.WATER_FILLED_FLASK, new ItemStack(ItemList.HOT_DRINK), 0);
+		GameRegistry.addSmelting(ItemList.COLD_DRINK, new ItemStack(ItemList.WATER_FILLED_FLASK), 0);
 		
 		// Add the new Flint and Steel recipes if its' enabled.
 		if (ConfigHandler.common.UseFlintandSteelRecipes) {
-			GameRegistry.addShapelessRecipe(new ResourceLocation(ExtraTAN.modId+"flintsteelheat"), null, new ItemStack(Item.getByNameOrId("extratan:flask_with_hot_water")), new Ingredient[] {Ingredient.fromItem(Item.getByNameOrId("extratan:filled_flask")), Ingredient.fromItem(Items.FLINT_AND_STEEL)});
-			GameRegistry.addShapelessRecipe(new ResourceLocation(ExtraTAN.modId+"flintsteelheat2"), null, new ItemStack(Item.getByNameOrId("extratan:filled_flask")), new Ingredient[] {Ingredient.fromItem(Item.getByNameOrId("extratan:flask_with_cold_water")), Ingredient.fromItem(Items.FLINT_AND_STEEL)});
+			GameRegistry.addShapelessRecipe(new ResourceLocation(ExtraTAN.modId+"flintsteelheat"), null, new ItemStack(ItemList.HOT_DRINK), new Ingredient[] {Ingredient.fromItem(ItemList.WATER_FILLED_FLASK), Ingredient.fromItem(Items.FLINT_AND_STEEL)});
+			GameRegistry.addShapelessRecipe(new ResourceLocation(ExtraTAN.modId+"flintsteelheat2"), null, new ItemStack(ItemList.WATER_FILLED_FLASK), new Ingredient[] {Ingredient.fromItem(ItemList.COLD_DRINK), Ingredient.fromItem(Items.FLINT_AND_STEEL)});
 		}
 		
 		SyncHandler.init(); // Initialize the packet synchronizer.

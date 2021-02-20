@@ -20,7 +20,7 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import toughasnails.api.stat.capability.ITemperature;
 
-public class BaseBreakableDrinkableItem extends BaseDrinkableItem {
+public class BaseBreakableDrinkableItem extends BaseDrinkableItem implements IConsumableThirst {
 
 	protected int tempModifier;
 	protected String name;
@@ -30,7 +30,7 @@ public class BaseBreakableDrinkableItem extends BaseDrinkableItem {
 	List<ItemStack> timedItems = new ArrayList<ItemStack>();
 	Map<ItemStack,Timer> itemTimers = new HashMap<ItemStack,Timer>();
 	
-	public BaseBreakableDrinkableItem(String name, String registryName, int temperature, BaseCreativeTab creativeTab)
+	public BaseBreakableDrinkableItem(String name, String registryName, BaseCreativeTab creativeTab)
 	{
 		super(registryName, registryName, creativeTab);
 		
@@ -99,7 +99,7 @@ public class BaseBreakableDrinkableItem extends BaseDrinkableItem {
 		EntityPlayer player = (EntityPlayer)entityIn;
 		
 		player.playSound(new SoundEvent(new ResourceLocation("minecraft:block.glass.break")), 1, 1); // Play a glass break sound.
-		player.inventory.removeStackFromSlot(itemSlot); // Delete the item.
+		player.inventory.removeStackFromSlot(player.inventory.getSlotFor(stack)); // Delete the item.
 		itemTimers.get(stack).cancel(); // Cancel the timer when done.
 		itemTimers.remove(stack); // Remove the timer.
 		timedItems.remove(timedItems.indexOf(stack)); // Removed the stack from the list.
