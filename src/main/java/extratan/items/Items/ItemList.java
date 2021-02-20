@@ -2,6 +2,7 @@ package extratan.items.Items;
 
 import extratan.blocks.TransparentBlockBase;
 import extratan.creativetabs.CreativeTabHandler;
+import extratan.items.BaseBreakableDrinkableItem;
 import extratan.items.BaseDrinkableItem;
 import extratan.items.BaseFlask;
 import net.minecraft.block.Block;
@@ -85,7 +86,7 @@ public class ItemList {
 		};
 	};
 	
-	public static final Item  SUPER_HOT_DRINK  = new BaseDrinkableItem("superHotDrink", "flask_with_super_hot_water", CreativeTabHandler.ExtraTANDrinks) {
+	public static final Item  SUPER_HOT_DRINK  = new BaseBreakableDrinkableItem("superHotDrink", "flask_with_super_hot_water", CreativeTabHandler.ExtraTANDrinks) {
 		public int GetTemperatureModifier() {
 			return 8;
 		};
@@ -101,7 +102,7 @@ public class ItemList {
 		};
 	};
 	
-	public static final Item  SUPER_COLD_DRINK  = new BaseDrinkableItem("superColdDrink", "flask_with_super_cold_water", CreativeTabHandler.ExtraTANDrinks) {
+	public static final Item  SUPER_COLD_DRINK  = new BaseBreakableDrinkableItem("superColdDrink", "flask_with_super_cold_water", CreativeTabHandler.ExtraTANDrinks) {
 		public int GetTemperatureModifier() {
 			return -8;
 		};
