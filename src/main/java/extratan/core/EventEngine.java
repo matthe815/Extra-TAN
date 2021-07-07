@@ -106,7 +106,7 @@ public class EventEngine {
 				
 			if (itemName.toString().toLowerCase().contains("smoothie") || itemName.toString().toLowerCase().contains("juice"))
 				NudgeTemperature(player, -2);
-			else if (itemName.toString().toLowerCase().contains("tea") || itemName.toString().toLowerCase().contains("cocoa") || itemName.toString().toLowerCase().contains("coffee"))
+			else if (itemName.toString().toLowerCase().contains("tea") || itemName.toString().toLowerCase().contains("cocoa") || itemName.toString().toLowerCase().contains("coffee") || itemName.toString().toLowerCase().contains("espresso"))
 				NudgeTemperature(player, 2);
 			else
 				return;
